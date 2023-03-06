@@ -23,6 +23,8 @@ target_include_directories(${PROJECT_NAME}
     ${OCTOMAP_INCLUDE_DIRS}
 )
 
+message(${OCTOMAP_LIBRARIES})
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   ament_lint_auto_find_test_dependencies()
